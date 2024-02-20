@@ -1,0 +1,48 @@
+.committee{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 30px;
+    justify-content: center;
+}
+
+.toggle-committee{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    min-width: 1000px;
+    max-width: 1000px;
+    margin:  50px auto;
+    font-family: 'Poppins';
+    font-weight: 300;
+
+    
+}
+
+.toggle-committee > div{
+    width: fit-content;
+    background-color: rgba(0,0,0,0.1);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: background-color 0.2s ease;
+
+    letter-spacing: 0.5px;
+    font-size: 15px;
+}
+
+.toggle-committee > div:hover{
+    background-color: rgb(17,24,39);
+    color: #ece7e1;
+    box-shadow: none;
+
+}
+
+.toggle-committee .active.optn{
+    background-color: rgb(17,24,39);
+    color: #ece7e1;
+}
+

@@ -1,0 +1,99 @@
+.fac-title{
+    font-family: 'Poppins';
+}
+
+.card-wrapper{
+    position: relative;
+    height: fit-content;
+}
+
+.fac-ImgWrapper{
+    position: relative;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.fac-ImgWrapper img{
+    width: 100%;
+    display: block;
+    transition: transform .3s ease,-webkit-transform .3s ease-in-out;
+    
+    
+}
+
+.fac-ImgWrapper img:hover{
+    transform: scale(1.08);
+}
+
+.toggle-facPhotos{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.toggle-facPhotos > div {
+    background-color: rgba(0,0,0,0.1);
+    width: fit-content;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-weight: 300;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 16px;
+    transition: background-color 0.2s ease-out;
+}
+
+.toggle-facPhotos > div:hover{
+    background-color: #1a1818;
+    color: #ece7e1;
+
+}
+
+
+
+.active.facOptn{
+    background-color: rgb(17,24,39);
+    color: #ece7e1;
+}
+
+
+@media screen and (max-width : 1400px) {
+    .fac-ImgWrapper{
+        width: 320px;
+    }
+}
+
+@media screen and (max-width : 1160px) {
+    .fac-ImgWrapper{
+        width: 260px;
+    }
+}
+
+@media screen and (max-width : 1000px) {
+    .fac-ImgWrapper{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width : 930px) {
+    .fac-ImgWrapper{
+        width: 220px;
+    }
+}
+
+@media screen and (max-width : 900px) {
+    .fac-ImgWrapper{
+        width: 200px;
+    }
+}
+@media screen and (max-width : 780px) {
+    .fac-ImgWrapper{
+        width: 400px;
+    }
+}

@@ -1,0 +1,16 @@
+.options{
+    display: flex;
+    font-family: 'Poppins';
+    font-weight: 500;
+    letter-spacing: 1px;
+
+}
+
+.splide__a{
+    background-color: red;
+}
+
+.exhibitors-title{
+    font-family: 'Poppins';
+}
+  

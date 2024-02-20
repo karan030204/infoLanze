@@ -1,0 +1,214 @@
+.contact-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  gap: 50px;
+  width: 100%;
+  font-family: "Poppins";
+  background: linear-gradient(to top, transparent 50%, rgba(99, 128, 193, 0.3) 50%);
+  
+}
+
+.contact-page .center-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.contact-page .get-in-touch {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.contact-page .get-in-touch-desc {
+  width: 900px;
+  text-align: center;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+}
+
+.contact-form {
+  padding: 30px;
+  width: 100%;
+  /* margin: 20px auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  font-family: "Poppins";
+
+}
+
+
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  z-index: 999;
+}
+
+.form-fields > div {
+  display: flex;
+  gap: 5px;
+  position: relative;
+}
+
+.form-fields label {
+  position: absolute;
+  font-size: 20px;
+  top: 0;
+  cursor: text;
+  left: 10px;
+  transition: 0.2s all;
+  color: rgba(0, 0, 0, 6);
+  z-index: -1;
+  font-weight: 200;
+}
+
+.form-fields .form-control {
+  border-bottom: 1px solid #d3d3d3;
+  width: 100%;
+  outline: 0;
+  box-shadow: none;
+  padding: 5px 10px;
+  background: transparent;
+}
+
+.form-fields .form-control:is(:focus) {
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.form-fields .form-control:invalid {
+  outline: 0;
+}
+
+.form-control:focus ~ label,
+.form-control:not(:placeholder-shown) ~ label {
+  left: 10px;
+  top: -10px;
+  font-size: 0.7em;
+  background-color: white;
+  width: fit-content;
+  z-index: 1;
+}
+
+.drop-down {
+  display: flex;
+  align-items: center;
+}
+
+.drop-down label {
+  position: relative;
+  font-weight: 300;
+  color: black;
+}
+
+.drop-down select {
+  border: 1px solid black;
+  border-radius: 7px;
+  padding: 5px 10px;
+}
+
+.register-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-btn button {
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.register-btn button:hover {
+  background-color: #111827;
+  color: #ece7e1;
+}
+
+.error.form-control {
+  border-color: red;
+}
+
+.form-fields span {
+  color: red;
+  font-size: 10px;
+}
+
+@media screen and (max-width: 1050px) {
+  .form-fields .form-control {
+    min-width: inherit;
+  }
+}
+
+.center-box {
+  position: relative;
+  margin: 0 auto;
+  width: fit-content;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  margin: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  transition: height 5s ease-in-out;
+  margin-bottom: 150px;
+  background-color: white;
+}
+
+.center-box .left-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  height: 90vh;
+  padding: 50px 50px 10px 50px;
+  background-color: rgb(78, 98, 142);
+  border-radius: 10px;
+  font-family: "Poppins";
+}
+
+.left-box .left-box-title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.left-box-title .info-title {
+  font-size: 20px;
+  color: #ece7e1;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.left-box-title .info-desc {
+  color: #d9d5cf;
+  width: 300px;
+}
+
+.left-box .left-box-desc {
+  color: #ece7e1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.left-box-desc > div {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
