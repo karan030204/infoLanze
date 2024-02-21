@@ -1,3 +1,31 @@
+.about{
+margin-top: 5px;
+z-index: -99999;
+}
+
+.title-underline{
+    position: relative;
+}
+
+.title-underline::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-top: solid 3px rgb(3,74,102) ;
+    left: 25px;
+    bottom: -10px;
+    border-radius: 50%;
+    height: 8px;
+}
+
+.about .about-title{
+    color: rgb(3,74,102);
+    font-family: 'Montserrat';
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 .mission, .vision, .values{
     font-family: 'Poppins';
     font-weight: 300;

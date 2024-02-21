@@ -15,8 +15,9 @@ const Facilities = () => {
   }
   return (
     <>
-      <section class="text-gray-600 body-font">
-        <h1 className="sm:text-3xl text-2xl font-medium title-font text-black mb-4 text-center mt-12 ">
+    <div className="facilities-section">
+      <section class=" text-gray-600 body-font">
+        <h1 className="sm:text-3xl text-2xl font-medium title-font text-black mb-4 text-center ">
           Facilities
         </h1>
         <div class="container px-5 py-16 mx-auto flex flex-wrap justify-around ">
@@ -112,6 +113,7 @@ const Facilities = () => {
       <section className="fac-photos-wrapper relative">
         <Photos />
       </section>
+      </div>
     </>
   );
 };

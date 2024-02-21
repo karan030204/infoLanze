@@ -10,14 +10,16 @@ import "@splidejs/react-splide/css/sea-green";
 // or only core styles
 import "@splidejs/react-splide/css/core";
 import "../../Elements/Carousel.css";
+import { carousel_img1, waptab_img } from "../../images/data";
 
 const Hero_Carousel = () => {
   return (
+    <div className="hero-carousel">
     <Splide
       options={{
         rewind: true,
         width: "100%",
-        height: "30%",
+        height: "100%",
         pauseOnHover: false,
         type: "loop",
         autoplay: true, // Set autoplay to true
@@ -31,23 +33,24 @@ const Hero_Carousel = () => {
     >
       <SplideSlide>
         <img
-          src="https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6_3x2.jpg"
+          src={carousel_img1}
           alt="Image 1"
         />
       </SplideSlide>
       <SplideSlide>
         <img
-          src="https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6_3x2.jpg"
+          src={carousel_img1}
           alt="Image 2"
         />
       </SplideSlide>
       <SplideSlide>
         <img
-          src="https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6_3x2.jpg"
+          src={waptab_img}
           alt="Image 3"
         />
       </SplideSlide>
     </Splide>
+    </div>
   );
 };
 

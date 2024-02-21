@@ -5,12 +5,21 @@
     letter-spacing: 1px;
 
 }
-
+.hero-carousel .splide{
+    padding: 0;
+    margin: 0;
+}
 .splide__a{
     background-color: red;
 }
 
 .exhibitors-title{
-    font-family: 'Poppins';
+    font-family: 'Montserrat';
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgb(3,74,102);
+
 }
   

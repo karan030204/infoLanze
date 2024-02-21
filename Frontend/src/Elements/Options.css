@@ -14,14 +14,23 @@
     height: 150px;
     border-radius: 50%;
     padding: 30px;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgb(25, 115, 154);
    
 }
 
-.ImgWrapper img{
-    width: 100%;
+.option-wrapper .ImgWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-weight: 900;
 }
+
 
 .option-content{
     text-align: center;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(3,74,102);
 }

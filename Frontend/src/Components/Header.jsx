@@ -1,37 +1,95 @@
-import React,{useEffect} from "react";
+import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import "../Elements/Header.css";
+import { logo_img } from "../images/data";
+
 
 const Header = () => {
+ 
+  const [isActive, setIsActive] = useState(1);
 
-  
+  const handleNavSelected = (e) => {
+    setIsActive(e.target.id)
+  };
+
   return (
     <>
       <header class="text-slate-600 bg-white-900 body-font shadow-lg ">
-        <div class="container mx-auto flex justify-around  p-5 flex-col md:flex-row items-center">
-          <nav class="nav-menu flex  w-fit flex-wrap items-center text-base  ">
-            <a href="/" class="mr-5 hover:text-black  cursor-pointer ">
+        <div class="  flex justify-around p-2 flex-col md:flex-row items-center">
+          <nav class="nav-menu flex  flex-wrap items-start text-base  ">
+            <NavLink
+              to="/"
+
+              activeClassName="active"
+              id="1"
+              onClick={(e) => handleNavSelected(e)}
+              class={isActive == 1 ? "active mr-5  hover:text-black  cursor-pointer ":"mr-5  hover:text-black  cursor-pointer "}
+            >
               Home
-            </a>
-            <a href="/about" class="mr-5 hover:text-black cursor-pointer">
+            </NavLink>
+            <NavLink
+              to="/about"
+              id="2"
+
+
+              activeClassName="active"
+              onClick={(e) => handleNavSelected(e)}
+              class={isActive == 2 ? "active mr-5  hover:text-black  cursor-pointer ":"mr-5  hover:text-black  cursor-pointer "}
+
+            >
               About
-            </a>
-            <a href="/committee" class="mr-5 hover:text-black cursor-pointer">
+            </NavLink>
+            <NavLink
+              to="/committee"
+
+              activeClassName="active"
+              id="3"
+              onClick={(e) => handleNavSelected(e)}
+              class={isActive == 3 ? "active mr-5  hover:text-black  cursor-pointer ":"mr-5  hover:text-black  cursor-pointer "}
+
+            >
               Committee
-            </a>
+            </NavLink>
           </nav>
-          <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0">
-            <span class="ml-2 text-xl xl:block lg:hidden text-black">Logo</span>
-          </a>
-          <nav class=" nav-menu flex   w-fit flex-wrap items-center text-base md:ml-0 ">
-            <a href="/facilities" class="mr-5 hover:text-black cursor-pointer">
+          <NavLink class="flex order-first lg:order-none  title-font items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0">
+            <span class="logo-ImgWrapper ml-2 text-2xl xl:block lg:block text-black">
+              <img src={logo_img} alt="karan dattani" />
+            </span>
+          </NavLink>
+          <nav class=" nav-menu flex ml-2  w-fit flex-wrap items-center text-base md:ml-5 ">
+            <NavLink
+              to="/facilities"
+
+              activeClassName="active"
+              id="4"
+              onClick={(e) => handleNavSelected(e)}
+              class={isActive == 4 ? "active mr-5  hover:text-black  cursor-pointer ":"mr-5  hover:text-black  cursor-pointer "}
+
+            >
               Facilities
-            </a>
-            <a href="/expo" class="mr-5 hover:text-black cursor-pointer">
+            </NavLink>
+            <NavLink
+              to="/expo"
+
+              activeClassName="active"
+              id="5"
+              onClick={(e) => handleNavSelected(e)}
+              class={isActive == 5 ? "active mr-5  hover:text-black  cursor-pointer ":"mr-5  hover:text-black  cursor-pointer "}
+
+            >
               Expo 2024
-            </a>
-            <a href="/contact" class="mr-5 hover:text-black cursor-pointer">
+            </NavLink>
+            <NavLink
+              to="/contact"
+              id="6"
+
+              activeClassName="active"
+              onClick={(e) => handleNavSelected(e)}
+              class={isActive == 6 ? "active mr-5  hover:text-black  cursor-pointer ":"mr-5  hover:text-black  cursor-pointer "}
+
+            >
               Contact
-            </a>
+            </NavLink>
           </nav>
         </div>
       </header>

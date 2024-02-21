@@ -1,3 +1,6 @@
+.facilities-section {
+    background: linear-gradient(to bottom left, rgba(190, 224, 247, 0.8) 20%, rgba(255,255,255,0.7) 80%);
+}
 .fac-title{
     font-family: 'Poppins';
 }

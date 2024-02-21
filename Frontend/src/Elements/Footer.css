@@ -1,0 +1,24 @@
+
+.footer-section{
+    background-color: rgb(18, 82, 110);
+}
+
+.footer-about-title{
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+}
+
+.footer-about-content{
+    font-family: 'Montserrat';
+    color: rgba(255,255,255,0.5);
+}
+
+.address-title{
+    font-size: 30px;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-weight: 700;
+
+}

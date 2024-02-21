@@ -10,13 +10,14 @@ import "@splidejs/react-splide/css/sea-green";
 
 // or only core styles
 import "@splidejs/react-splide/css/core";
+import { waptab_img, carousel_img1 } from "../../images/data";
 
 const Past_Exhibitors = () => {
   return (
     <>
-    <div className="exhibitors-title text-4xl text-center mt-10 font-semibold">
-      Our Past Exhibitors
-    </div>
+      <div className="exhibitors-title  text-center mt-10 ">
+        <span className="title-underline">Our Past</span> Exhibitors
+      </div>
       <Splide
         options={{
           rewind: true,
@@ -39,74 +40,35 @@ const Past_Exhibitors = () => {
         aria-label="My Favorite Images"
         className="mx-auto"
       >
-        
         <SplideSlide>
-          <img
-            src="https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6_3x2.jpg"
-            alt="Image 1"
-
-          />
+          <img src={waptab_img} alt="Image 1" />
         </SplideSlide>
         <SplideSlide>
-          <img
-            src="https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6_3x2.jpg"
-            alt="Image 1"
-          
-          />
+          <img src={carousel_img1} alt="Image 1" />
         </SplideSlide>{" "}
         <SplideSlide>
-          <img
-            src="https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6_3x2.jpg"
-            alt="Image 1"
-    
-          />
+          <img src={waptab_img} alt="Image 1" />
         </SplideSlide>{" "}
         <SplideSlide>
-          <img
-            src="https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6_3x2.jpg"
-            alt="Image 1"
-       
-          />
+          <img src={carousel_img1} alt="Image 1" />
         </SplideSlide>{" "}
         <SplideSlide>
-          <img
-            src="https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6_3x2.jpg"
-            alt="Image 1"
-  
-          />
+          <img src={waptab_img} alt="Image 1" />
         </SplideSlide>{" "}
         <SplideSlide>
-          <img
-            src="https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6_3x2.jpg"
-            alt="Image 1"
-  
-          />
+          <img src={carousel_img1} alt="Image 1" />
         </SplideSlide>{" "}
         <SplideSlide>
-          <img
-            src="https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6_3x2.jpg"
-            alt="Image 1"
- 
-          />
+          <img src={waptab_img} alt="Image 1" />
         </SplideSlide>{" "}
         <SplideSlide>
-          <img
-            src="https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6_3x2.jpg"
-            alt="Image 1"
-
-          />
+          <img src={carousel_img1} alt="Image 1" />
         </SplideSlide>
         <SplideSlide>
-          <img
-            src="https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6_3x2.jpg"
-            alt="Image 2"
-          />
+          <img src={waptab_img} alt="Image 2" />
         </SplideSlide>
         <SplideSlide>
-          <img
-            src="https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6_3x2.jpg"
-            alt="Image 3"
-          />
+          <img src={carousel_img1} alt="Image 3" />
         </SplideSlide>
       </Splide>
     </>

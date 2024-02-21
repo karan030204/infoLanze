@@ -4,11 +4,11 @@ import "../Elements/About.css";
 const About_Us = () => {
   return (
     <>
-      <section class="text-slate-800 bg-white body-font">
-        <div class="container px-5 py-20 mx-auto">
+      <section class="about text-slate-800 bg-white body-font">
+        <div class="px-5 py-8 mx-auto">
           <div class="text-center mb-20">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font text-black mb-4">
-              About Us
+            <h1 class="about-title sm:text-3xl text-2xl    mb-7">
+              <span className="title-underline">About</span> Us
             </h1>
             <p class="text-base leading-relaxed  xl:w-3/4 lg:w-3/4  mx-auto text-gray-800 text-opacity-80">
               <b>WAPTAG</b> has become the name synonymous to MOST trusted and
